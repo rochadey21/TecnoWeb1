@@ -1,0 +1,63 @@
+body{
+    font-family: 'Anton', sans-serif;
+    background-color:rgb(0, 0, 107);
+}
+/*comienzo*/
+.Inicio{
+    margin:5px ;
+}
+.ContenedorPrincipal{
+    height: 250px;
+    background-color:rgb(40, 40, 40);
+}
+#lofoimg{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 500px;
+    height: 150px;
+    border-radius: 100px;
+}
+#titulo{
+    margin-left: 250px;
+}
+#Menu{
+    margin-left: 800px;
+    margin-top: -150px;
+    font-size: 40px;
+}
+#link{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/*medio*/
+.Medio{
+    margin: 5px;
+}
+#ContenidoFondo{
+    background-color: rgb(40, 40, 40);
+    display:flexbox;
+    flex-direction: row;
+}
+#ContenidoFondoIMG{
+    margin: 10px;
+    position:relative;
+    width: 350px;
+}
+/*final*/
+.Final{
+    margin: 5px;
+}
+#PiePagina{
+    background-color: rgb(40, 40, 40);
+    padding: 10px;
+}
+#PiePaginaIMG{
+    height: 50px;
+}
+#fff{
+    color: rgb(163, 163, 163);
+}
+#fin{
+    color: rgb(163, 163, 163);
+}
