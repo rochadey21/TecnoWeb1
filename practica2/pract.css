@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Anton', sans-serif;
     background-color:rgb(0, 0, 107);
@@ -19,6 +23,7 @@ body{
 }
 #titulo{
     margin-left: 250px;
+    font-size: 40px;
 }
 #Menu{
     margin-left: 800px;
@@ -60,4 +65,72 @@ body{
 }
 #fin{
     color: rgb(163, 163, 163);
+    font-size: 25px;
+}
+/*tamaños*/
+@media screen and (max-width:1100px) {
+    body{
+        background-color: rgb(116, 0, 0);
+    }  
+    #lofoimg{
+        margin-top: 30px;
+        margin-left: 100px;
+        width: 350px;
+        height: 120px;
+        border-radius: 100px;
+    } 
+    #titulo{
+        margin-left: 185px;
+        font-size: 30px;
+    }
+    #Menu{
+        margin-left: 550px;
+        margin-top: -56px;
+        font-size: 30px;
+    }
+    #ContenidoFondoIMG{
+        margin: 10px;
+        position:relative;
+        width: 330px;
+    }
+    #PiePaginaIMG{
+        height: 25px;
+    }
+    #fin{
+        color: rgb(214, 214, 214);
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    body{
+        background-color: rgb(3, 85, 0);
+    }  
+    #lofoimg{
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 250px;
+        height: 100px;
+        border-radius: 100px;
+    } 
+    #titulo{
+        margin-left: 75px;
+        font-size: 25px;
+    }
+    #Menu{
+        margin-left: 320px;
+        margin-top: -45px;
+        font-size: 25px;
+    }
+    #ContenidoFondoIMG{
+        margin: 10px;
+        position:relative;
+        width: 200px;
+    }
+    #PiePaginaIMG{
+        height: 12px;
+    }
+    #fin{
+        color: white;
+        font-size: 10px;
+    }    
 }
