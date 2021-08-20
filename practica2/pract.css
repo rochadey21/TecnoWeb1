@@ -30,7 +30,7 @@ body{
     margin-top: -150px;
     font-size: 40px;
 }
-#link{
+#Menu a{
     color: black;
     text-decoration: none;
     padding: 10px 15px;
@@ -44,7 +44,7 @@ body{
     display:flexbox;
     flex-direction: row;
 }
-#ContenidoFondoIMG{
+#ContenidoFondo img{
     margin: 10px;
     position:relative;
     width: 350px;
@@ -57,7 +57,7 @@ body{
     background-color: rgb(40, 40, 40);
     padding: 10px;
 }
-#PiePaginaIMG{
+#PiePagina img{
     height: 50px;
 }
 #fff{
@@ -88,12 +88,12 @@ body{
         margin-top: -56px;
         font-size: 30px;
     }
-    #ContenidoFondoIMG{
+    #ContenidoFondo img{
         margin: 10px;
         position:relative;
         width: 330px;
     }
-    #PiePaginaIMG{
+    #PiePagina img{
         height: 25px;
     }
     #fin{
@@ -121,12 +121,12 @@ body{
         margin-top: -45px;
         font-size: 25px;
     }
-    #ContenidoFondoIMG{
+    #ContenidoFondo img{
         margin: 10px;
         position:relative;
         width: 200px;
     }
-    #PiePaginaIMG{
+    #PiePagina img{
         height: 12px;
     }
     #fin{
