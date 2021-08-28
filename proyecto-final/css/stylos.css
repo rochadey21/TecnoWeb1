@@ -1,0 +1,143 @@
+/*Para quitar los estilos de html*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration:none;}
+/*header*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(../assets/img/villagif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-main{
+    height: 90vh;
+    position: relative;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: rgb(161, 103, 48);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    display: inline-block;
+    padding: 20px 40px;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+ul li a:hover{
+    background:linear-gradient(rgba(92, 92, 92, 0.5),rgba(0,0,0,0.5));;;
+}
+.sub-menu{
+    display: flex;
+    position:absolute;
+}
+.sub-menu ul li{
+    display: inline-block;
+    display: none;
+}
+.sub-menu ul li a{
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+ul li:hover .sub-menu ul li{
+    display: flex;
+}
+.contenido{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.contenido h1{
+    font-size: 50px;
+}
+.contenido p{
+    font-size: 25px;
+    margin: 20px;
+}
+/*footer*/
+.footer-main{
+    height: 10vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    display: flex;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+.pie-pagina p{
+    color: rgb(255, 254, 254);
+    font-size: 15px;
+    padding: 15px;
+}
+.pie-pagina-rs{
+    margin-left: auto;
+}
+.pie-pagina-rs a{
+    color: rgb(255, 254, 254);
+    padding: 10px;
+}
+.pie-pagina-rs a:hover{
+    background:linear-gradient(rgba(43, 43, 43, 0.5),rgba(0,0,0,0.5));;
+    padding: 5px,10px;
+}
