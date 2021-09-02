@@ -1,0 +1,168 @@
+/*header Diseño*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(94, 170, 141);
+}
+.header-main{
+    height: 15vh;
+    position: relative;
+}
+/*.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: rgb(161, 103, 48);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    display: inline-block;
+    padding: 20px 40px;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+}
+ul li a:hover{
+    background:linear-gradient(rgba(92, 92, 92, 0.5),rgba(0,0,0,0.5));;;
+}
+.sub-menu{
+    display: flex;
+    position:absolute;
+}
+.sub-menu ul li{
+    display: inline-block;
+    display: none;
+}
+.sub-menu ul li a{
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 2px;
+}
+ul li:hover .sub-menu ul li{
+    display: flex;
+}*/
+/*main*/
+.Main{
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+}
+.hormiga-p{
+    color: white;
+    text-align: center;
+}
+.hormiga-p h2{
+    font-size: 50px;
+}
+#hormiga-pp p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+.hormiga-s{
+    color: white;
+    text-align: center;
+}
+.hormiga-s h2{
+    font-size: 50px;
+}
+#hormiga-ss p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+.menu-animal p{
+    font-size: 20px;
+    text-align: left;
+}
+.m-a-a{
+    display: flex;
+    margin: 10px 300px;
+}
+.m-a-b{
+    display: flex;
+    margin: 10px 300px;
+
+}
+.animales img{
+    margin: 1px;
+    width: 300px;
+    height: 250px;
+}
+
+@media screen and (max-width:600px){
+    /*main*/
+.Main{
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+}
+.hormiga-p{
+    color: white;
+    text-align: center;
+}
+.hormiga-p h2{
+    font-size: 25px;
+}
+.hormiga-p img{
+    width: 250px;
+}
+#hormiga-pp p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+.hormiga-s{
+    color: white;
+    text-align: center;
+}
+.hormiga-s h2{
+    font-size: 25px;
+}
+#hormiga-ss p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+.menu-animal p{
+    font-size: 10px;
+    text-align: left;
+}
+.m-a-a{
+    display: flex;
+    margin: 10px 40px;
+}
+.m-a-b{
+    display: flex;
+    margin: 10px 40px;
+
+}
+.animales img{
+    margin: 1px;
+    width: 160px;
+    height: 120px;
+}
+
+}

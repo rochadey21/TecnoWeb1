@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../assets/img/fondoxd.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.Registro{
+    background: #000000d0;
+    width: 450px;
+    height: 600px;
+    padding: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+}
+.Registro p{
+    padding: 5px 0px;
+    margin-left:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Registro .label{
+    display: block;
+    margin: auto;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton{
+    padding: 10px 135px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton:hover{
+    transition: 2s;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.boton1{
+    margin-top: 40px;
+    padding: 10px 116px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton1:hover{
+    transition: 2s;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+/*clima*/
+.clima{
+    font-size: 25px;
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 700px;
+    height: 400px;
+    margin: 5px;
+}
+
+
+
+@media screen and (max-width:1250px){
+    /*clima*/
+    .clima{
+        font-size: 20px;
+        width: 300px;
+    }
+    
+
+    .Registro{
+        width: 350px;
+        
+    }
+
+    .Registro .label{
+        padding: 10px 30px;
+    }
+
+    .Registro .boton{
+        padding: 10px 105px;
+    }
+    .Registro .boton1{
+        padding: 10px 86px;
+    }
+}
+
+@media screen and (max-width:800px){
+   
+    
+   main{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .Registro{
+       margin-top: 50px;
+   }
+
+
+    
+}

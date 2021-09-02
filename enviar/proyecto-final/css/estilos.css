@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}*/
+body{
+    
+    
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+}
+/*centrar el menu*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #000000d0;
+}
+/*Ocultar el togle en vista grande*/
+.bur{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+/*dibujar el togle*/
+.bur span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.menu{
+    display: flex;
+    padding: 0;
+}
+
+.menu li{
+    padding: 0 40px;
+    list-style: none;
+    transition: 5s;
+    
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #f3f3f3;
+    font-weight: 600;
+}
+/*hover*/
+.menu li :hover{
+    background-color: rgb(70, 61, 61);
+    padding: 15px;
+    transition: 0.3s;
+}
+/*submenu*/
+.sub-menu{
+    position: absolute;
+    width: 50%;
+    display: none;
+    
+}
+.sub-menu ul li{
+    
+}
+.sub-menu ul li a{
+    display: block;
+    
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+    padding: 0;
+    background: black;
+    transition: 0s;
+    width: 250px;
+}
+
+/*responsive*/
+
+@media screen and (max-width:1200px){
+    .menu{
+        display: flex;
+        padding: 0;
+    }
+    
+    .menu li{
+        padding: 0 20px;
+        list-style: none;
+        transition: 5s;
+    }
+    .menu li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #f3f3f3;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    body{
+        
+    }
+
+    .logo{
+        padding-left: 25px;
+    }
+    /*Mostrar el togle*/
+    .bur{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+    }
+    /*Animation de togle*/
+    .bur:hover{
+        transform: rotate(360deg);
+    }
+    /*Alineacion de la barra de menu de inicio y en columna*/
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+
+    }
+    /*controlador del menu togle*/
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+    }
+
+    .menu li{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    /*submenu*/
+    /*.sub-menu{
+        display: none;
+        margin-left: 100px;
+        background: black;
+    }
+    .sub-menu ul li{
+        display: inline-block;
+        display: none;
+        background-color: black;
+    }
+    .sub-menu ul li a{
+        font-size: 20px;
+        padding: 15px;
+        margin-top: 2px;
+        color: #f3f3f3;
+    }*/
+    .sub-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+        display: none;
+        opacity: 0;
+        margin-left: 150px;
+    }
+    .sub-menu ul li{
+    
+    }
+    .sub-menu ul li a{
+        display: block;
+        font-size: 20px;
+        padding: 15px;
+        margin-top: 0px;
+    }
+    
+    .menu li:hover .sub-menu{
+        display: block;
+        padding: 0;
+        background: black;
+        transition: 0s;
+    }
+    
+
+}
+
+/*span animation*/
+@keyframes muestraMenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.menu.activado{
+    display: flex;
+    animation:muestraMenu 350ms ease-in-out both;
+}
+.sub-menu.activado{
+    display: flex;
+    animation:muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform:rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform :rotate(45deg) translate(-10px, -8px);
+}

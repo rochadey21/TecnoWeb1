@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(/img/fondoxd.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    
+}
+
+main{
+
+    display: flex;
+   
+}
+
+form{
+    background: #000000d0;
+    width: 450px;
+    height: 600px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 90px;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+}
+
+form p{
+    padding: 5px 0px;
+    margin-left:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form .label{
+    display: block;
+    margin: auto;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.boton{
+    padding: 10px 135px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton:hover{
+    transition: 2s;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+/*clima*/
+section{
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 50px;
+    font-size: 25px;
+}
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 700px;
+    height: 400px;
+    margin: 10px;
+}
+
+@media screen and (max-width:1250px){
+    /*clima*/
+    section{
+        font-size: 20px;
+    }
+    .card{
+        width: 300px;
+    }
+
+    form{
+        width: 350px;
+        
+    }
+
+    form .label{
+        padding: 10px 30px;
+    }
+
+    form .boton{
+        padding: 10px 105px;
+    }
+}
+
+@media screen and (max-width:500px){
+   
+    
+   main{
+       flex-direction: column;
+   }
+    
+}

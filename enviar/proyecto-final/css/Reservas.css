@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.galeria_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 150px;
+}
+.galeria_item{
+    margin-left: 150px;
+}
+.galeria_img{
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .galeria_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 150px;
+        margin-left: 100px;
+    }
+}
