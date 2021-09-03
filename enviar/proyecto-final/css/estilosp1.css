@@ -100,22 +100,18 @@ nav{
 
 /*responsive*/
 
-@media screen and (max-width:1200px){
-    .menu{
-        display: flex;
-        padding: 0;
-    }
-    
-    .menu li{
-        padding: 0 20px;
+@media screen and (max-width:1250px){
+    .menu .menu-item{
+        padding: 0 17px;
         list-style: none;
-        
+
+
     }
-    .menu li a{
+    .menu .menu-item a{
         text-decoration: none;
-        font-size: 20px;
+        font-size: 25px;
         color: #f3f3f3;
-        font-weight: 600;
+
     }
 }
 
