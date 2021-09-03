@@ -1,9 +1,7 @@
-body{
-    background: #3fb8a45b;
-}
+
 .titulo {
     color: black;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -19,8 +17,19 @@ body{
 
 /*  servicios*/
 
+.main-main{
+    background-image: url(../assets/img/fondoxd.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo{
+    font-size: 40px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
 .about-services{
-    
+   
     padding-bottom: 30px;
 }
 
@@ -32,15 +41,26 @@ body{
 }
 
 .servicio-ind{
+    background: #e2dada;
+    padding: 20px;
     width: 28%;
     text-align: center;
+    
 }
 
 .servicio-ind img{
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    vertical-align: top;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 1s;
+    
 }
 
+.servicio-ind:hover{
+    padding: 20px;
+    border: #222 solid 2px;
+}
 .servicio-ind h3{
     margin: 10px 0;
 }
@@ -48,6 +68,80 @@ body{
 .servicio-ind p{
     font-weight: 300;
     text-align: justify;
+}
+/*hover*/
+
+.servicio-ind a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1);
+}
+
+/*footer*/
+footer{
+    background: #222;
+    padding-bottom: 0.1px;
+    
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact-us{
+    
+    color: #fff;
+    padding: 20px;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social-media{
+    
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
 }
 
 @media screen and (max-width:900px){
@@ -72,10 +166,44 @@ body{
     .servicio-ind img{ 
          width: 90%;
     }
+
+    /*footer*/
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
         
 }
 
 @media screen and (max-width:500px){
 
-   
+    /*footer*/
+    .social-media{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
 }

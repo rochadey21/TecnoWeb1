@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.sec-clima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.clima{
+    
+    font-size: 25px;
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 700px;
+    height: 400px;
+    margin: 5px;
+}
+
+@media screen and (max-width:1250px){
+    /*clima*/
+    .clima{
+        font-size: 20px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:800px){
+    /*clima*/
+    .clima{
+        font-size: 20px;
+        width: 300px;
+    }
+}
